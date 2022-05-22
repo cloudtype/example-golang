@@ -1,13 +1,19 @@
-# Go Sample App using Mod
+# Sample Go
 
-## Building
+Run Locally with Go installed:
+```
+go build
+./sample-go
+```
 
-`pack build mod-sample --buildpack gcr.io/paketo-buildpacks/go`
+Run Locally with pack & Docker:
+```
+pack build --builder=gcr.io/buildpacks/builder sample-go
+docker run -p8080:8080 sample-go
+```
 
-## Running
+Check it out: [http://localhost:8080](http://localhost:8080)
 
-`docker run --interactive --tty --env PORT=8080 --publish 8080:8080 mod-sample`
+Run on Cloud Run:
 
-## Viewing
-
-`curl http://localhost:8080`
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)

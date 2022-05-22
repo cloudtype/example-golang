@@ -1,5 +1,4 @@
-module github.com/paketo-buildpacks/samples/go/mod
+// +heroku goVersion go1.14
+module github.com/GoogleCloudPlatform/buildpack-samples/sample-go
 
-go 1.15
-
-require github.com/gorilla/mux v1.8.0
+go 1.14
